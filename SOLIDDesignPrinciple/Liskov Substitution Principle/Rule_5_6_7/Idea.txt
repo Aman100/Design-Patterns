@@ -1,0 +1,54 @@
+Rule_5:
+Invariants must be preserved:
+
+State: An object can have multiple properties and value of properties defines
+       state of an object.
+let's say for all states of base class, particular condition is true, then that is
+called as an Invariant property of that class. Something which cannot be varied.
+Now if subclass introduces a feature which changes this, then the
+LSP [Invariants must be preserved] rule is broken.
+
+class SeniorCitizen
+	For all instances of SeniorCitizen age is always>=60
+
+Now if someone creates derived class of SeniorCitizen and introduces a functionaly
+which allows SeniorCitizen to 50 then the Invariant rule of SeniorCitizen is 
+voilated and hence application will break.
+
+Rule_6:
+History Rule:
+When extending a base, the derived should not modify unmodifiable property.
+
+Eg1: While creating an object, name is set and no setter method is provided
+     change the name, and name is private / protected, which means that the
+     base class states that name is not modifiable, and if derived introduced
+     a functionality(Reflection, trace memory) which allows user of derived 
+     to modify the name then LSP is broken.
+
+Eg2: If a property is intially set to 0 (on creation of an object), then because
+     of some events, the value is incremented. It is never decremented or set
+     to 0.
+     Then derived should not introduced a functionality that does otherwise, 
+     means reset to 0 or decrement it. If the derived does that then LSP rule is
+     broken.
+
+Rule_7:
+Rule related to throwing exception:
+	If a function of base classed is throwing exception and it is redefined 
+	in derived, then the function in derived should not throw / raise Exception
+	that is beyond the boundary of Exception that might be raised by the 
+	base class method.
+
+SuperCoolException 
+CustomException inherits SuperCoolException
+CoolException inherits CustomException
+BhaltaException
+
+class Base:
+	doSomething() method which will Raise CustomException.
+
+Class Derived:public Base
+	doSomething() is overriden and in some cases it raise 
+		1. CustomException, CoolException (LSP rule is not voilated)
+		2. SuperCoolException 	(LSP rule is voilated)
+		3. BhaltaException	(LSP rule is voilated)
