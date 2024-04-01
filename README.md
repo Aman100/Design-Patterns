@@ -14,4 +14,4 @@
        2. Move Constructor
        3. Return Value Optimization
        4. Smart Pointers
-       5. Imp of Copy, Move Constructor & Copy,Move Assignment operator function
+       5. Implementation of Copy, Move Constructor & Copy,Move Assignment operator function
