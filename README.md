@@ -2,16 +2,26 @@
  This repository contains ideas and codes related to
  <br/><br/>
 ## Solid Design Principles
-       1. Singel Responsibility Principle 
-       2. Open Close Principle
-       3. Liskov Substitution Principle
-       4. Interface Segregation Principle
-       5. Dependency Inversion Principle
+* Singel Responsibility Principle 
+* Open Close Principle
+* Liskov Substitution Principle
+* Interface Segregation Principle
+* Dependency Inversion Principle
 ## Design Patterns:
-       1. Builder
+
+1. Creational Design Patterns
+    * Builder
+    * Factory
+    * Prototype
+    * Singleton
+
+
+2. Structural Design Patterns
+    * Adapter
+
 ## CPP Topics example
-       1. lvalue-rvalue
-       2. Move Constructor
-       3. Return Value Optimization
-       4. Smart Pointers
-       5. Implementation of Copy, Move Constructor & Copy,Move Assignment operator function
+* lvalue-rvalue
+*  Move Constructor
+* Return Value Optimization
+* Smart Pointers
+* Implementation of Copy, Move Constructor & Copy,Move Assignment operator function
