@@ -43,7 +43,6 @@ return s2i[str];
 
 bool doesStringExistsWRTKey(int key)
 {
-string *str=i2s[key];
 return (i2s.find(key)!=i2s.end());
 }
 
