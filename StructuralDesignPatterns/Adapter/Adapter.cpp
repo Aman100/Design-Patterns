@@ -1,6 +1,7 @@
 /*
 Adapter Pattern: This pattern is used in scenario when one entity needs to access
 services of another but there is no compatibality between them.
+Adapter (Converter) would be require to establish compatibality
 
 Scenario:
 Need to convert image file to pdf and then upload to it.
