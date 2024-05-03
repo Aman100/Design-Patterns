@@ -19,6 +19,7 @@
 2. Structural Design Patterns
     * Adapter
     * FlyWeight
+    * Bridge
 
 ## CPP Topics example
 * lvalue-rvalue
